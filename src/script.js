@@ -21,8 +21,11 @@ function animateResult() {
   document.querySelector(".btn-predict").classList.remove("btn-predict-hover");
   document.querySelector(".btn-predict").classList.add("btn-predict-result");
   document.querySelector(".btn-predict").innerHTML = "";
-  var audio = new Audio("newYorkSound.mp3");
-  var audioElement = new Audio("/assets/music/newYorkSound.mp3");
+  var audioElement = new Audio(
+    "https://drive.google.com/file/d/1FDc2yIOQYswj-LoAzTOE_QJ46zoY2mQ8/view?usp=share_link"
+  );
+  // var audioElement = new Audio("/assets/music/newYorkSound.mp3");
+
   audioElement.play();
   document.querySelector(".result").classList.add("show");
   document.querySelector(".taxi").classList.add("drive1");
