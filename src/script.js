@@ -12,7 +12,6 @@ function pick_Hour_Date() {
   let date = date_hour.slice(0, -6);
   console.log(time);
   console.log(date);
-  // sendToPython(time, data);
 }
 
 function animateResult() {
