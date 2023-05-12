@@ -12,7 +12,7 @@ function pick_Hour_Date() {
   let date = date_hour.slice(0, -6);
   console.log(time);
   console.log(date);
-  // sendToPython(time, data);
+  sendToPython(time, date);
 }
 
 function animateResult() {
@@ -70,7 +70,7 @@ function getRandomNumber() {
   return Math.floor(Math.random() * (4500 - 1000 + 1)) + 1000;
 }
 
-function sendToPython(time, data) {
+function sendToPython(time, date) {
   // Use AJAX to send the variables to the server
   $.ajax({
     type: "POST",
