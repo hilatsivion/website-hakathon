@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/fireworks.css" />
+    <script src="./src/script.js"></script>
+    <title>Taxis New York</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="result">
+        <img src="./assets/images/Taxi.png" alt="taxi" class="taxi" />
+        <div class="number-of-results hidden">4303</div>
+      </div>
+      <div class="gradient"></div>
+      <div class="texts">
+        <div class="title transition">New York Taxis</div>
+        <div class="sub-title transition">
+          <span>The Mission:</span> Predict how many taxis will be on the road
+          in New York <br />on a particular day at a particular time.
+        </div>
+        <div class="date_time_picker">
+          <div class="date-text-title" for="start">Pick Date and Time:</div>
+          <div class="form">
+            <input
+              type="datetime-local"
+              class="picker"
+              name="trip-start"
+              value="2023-05-12 00:00"
+              min="2010-01-01"
+              max="2030-12-31"
+            />
+            <div class="btn-predict btn-predict-hover">Predict</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
